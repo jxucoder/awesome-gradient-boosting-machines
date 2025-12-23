@@ -4,13 +4,9 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/jxucoder/awesome-gradient-boosting-machines/pulls)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> A curated list of gradient boosting frameworks, research papers, tutorials, and resources for machine learning practitioners and researchers.
+> A comprehensive collection of gradient boosting libraries, cutting-edge research, practical tutorials, and industry resources—your one-stop guide to mastering GBMs.
 
-<p align="center">
-  <img width="600" src="https://raw.githubusercontent.com/benedekrozemberczki/awesome-gradient-boosting-papers/master/boosting.gif" alt="Gradient Boosting">
-</p>
-
-Gradient boosting is one of the most powerful techniques for building predictive models. It builds an ensemble of weak prediction models (typically decision trees) in a stage-wise fashion and generalizes them by allowing optimization of an arbitrary differentiable loss function.
+From Kaggle competitions to production ML systems, gradient boosting machines dominate tabular data. This list tracks the ecosystem: battle-tested implementations, state-of-the-art papers from top venues (NeurIPS, ICML, ICLR), and resources to level up your GBM skills.
 
 ---
 
