@@ -6,6 +6,10 @@
 
 > A comprehensive collection of gradient boosting libraries, cutting-edge research, practical tutorials, and industry resources—your one-stop guide to mastering GBMs.
 
+<p align="center">
+  <img width="700" src="assets/Gemini_Generated_Image_km0rzukm0rzukm0r.jpeg" alt="Gradient Boosting Machines">
+</p>
+
 From Kaggle competitions to production ML systems, gradient boosting machines dominate tabular data. This list tracks the ecosystem: battle-tested implementations, state-of-the-art papers from top venues (NeurIPS, ICML, ICLR), and resources to level up your GBM skills.
 
 ---
