@@ -70,6 +70,7 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 ### Other Frameworks
 
 - [NGBoost](https://github.com/stanfordmlgroup/ngboost) - Natural gradient boosting for probabilistic prediction by Stanford ML Group.
+- [XGBoost-Distribution](https://github.com/CDonnerer/xgboost-distribution) - Probabilistic prediction with XGBoost via MLE. Like NGBoost but ~15x faster, with full XGBoost features (monotonic constraints, GPU). ⭐ 120+
 - [PGBM](https://github.com/elephaint/pgbm) - Probabilistic Gradient Boosting Machines with native GPU acceleration, auto-differentiation, and uncertainty estimates. Built on PyTorch/Numba.
 - [GBNet](https://github.com/mthorrell/gbnet) - Integrates XGBoost/LightGBM with PyTorch for auto-differentiation of custom loss functions and hybrid neural network + GBM models. [[JOSS Paper](https://joss.theoj.org/papers/10.21105/joss.08047)]
 - [Perpetual](https://github.com/perpetual-ml/perpetual) - Hyperparameter-free gradient boosting that self-generalizes. Just set a `budget` parameter instead of tuning hyperparameters. Written in Rust with Python bindings.
@@ -79,6 +80,7 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 - [InterpretML / EBM](https://github.com/interpretml/interpret) - Microsoft's Explainable Boosting Machine - a glass-box model as accurate as black-box GBMs but fully interpretable. ⭐ 6k+
 - [FLAML](https://github.com/microsoft/FLAML) - Microsoft's Fast and Lightweight AutoML library with efficient GBM hyperparameter tuning. ⭐ 4k+
 - [AutoGluon-Tabular](https://github.com/autogluon/autogluon) - Amazon's AutoML that ensembles multiple GBMs (XGBoost, LightGBM, CatBoost) for state-of-the-art tabular performance. ⭐ 8k+
+- [AutoXGB](https://github.com/abhishekkrthakur/autoxgb) - XGBoost + Optuna: auto train, tune, and serve XGBoost models directly from CSV. By Kaggle Grandmaster Abhishek Thakur. ⭐ 725+
 - [Scikit-learn HistGradientBoosting](https://scikit-learn.org/stable/modules/ensemble.html#histogram-based-gradient-boosting) - Fast histogram-based GBM inspired by LightGBM, native to scikit-learn.
 - [Scikit-learn GradientBoosting](https://scikit-learn.org/stable/modules/ensemble.html#gradient-boosting) - Classic gradient boosting implementation in scikit-learn.
 - [H2O GBM](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/gbm.html) - H2O's gradient boosting machine implementation.
@@ -394,6 +396,9 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 ### Interpretability & Explainability
 
 - [SHAP](https://github.com/shap/shap) - SHapley Additive exPlanations for interpreting GBM predictions. The gold standard for feature importance. ⭐ 23k+
+- [PyCEbox](https://github.com/AustinRochford/PyCEbox) - Individual Conditional Expectation (ICE) plots for peeking inside black-box models. Shows how predictions vary per feature for individual instances, complementing PDPs. [[Paper](https://arxiv.org/abs/1309.6392)] ⭐ 164+
+- [dtreeviz](https://github.com/parrt/dtreeviz) - Beautiful decision tree visualization and model interpretation. Supports XGBoost, LightGBM, sklearn, PySpark, TensorFlow DF. Now with AI-powered explanations! ⭐ 3.1k+
+- [ELI5](https://github.com/TeamHG-Memex/eli5) - Debug ML classifiers and explain predictions. Supports XGBoost, LightGBM, CatBoost, sklearn. Includes LIME for text and permutation importance. ⭐ 2.8k+
 - [SHAP TreeExplainer Tutorial](https://shap.readthedocs.io/en/latest/example_notebooks/tabular_examples/tree_based_models/) - Efficient SHAP values for tree models
 - [InterpretML EBM Tutorial](https://interpret.ml/docs/ebm.html) - Glass-box interpretable boosting
 - [Permutation Importance](https://scikit-learn.org/stable/modules/permutation_importance.html) - Model-agnostic feature importance
