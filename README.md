@@ -38,6 +38,7 @@ Gradient boosting is one of the most powerful techniques for building predictive
 - [Benchmarks & Comparisons](#benchmarks--comparisons)
 - [Real-World Applications](#real-world-applications)
 - [Related Awesome Lists](#related-awesome-lists)
+- [2026 Conferences](#2026-conferences)
 - [Contributing](#contributing)
 
 ---
@@ -516,6 +517,25 @@ Gradient boosting is one of the most powerful techniques for building predictive
 - [Awesome Decision Tree Research](https://github.com/benedekrozemberczki/awesome-decision-tree-papers) - Decision tree papers
 - [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning) - General ML resources
 - [Awesome AutoML](https://github.com/hibayesian/awesome-automl-papers) - AutoML papers and resources
+
+---
+
+## 2026 Conferences
+
+Top ML/AI conferences in 2026 where gradient boosting research is commonly presented:
+
+| Conference | Full Name | Location | Dates | Website |
+|------------|-----------|----------|-------|---------|
+| **AAAI 2026** | 40th AAAI Conference on Artificial Intelligence | Singapore | January 20–27, 2026 | [aaai.org](https://aaai.org/conference/aaai/aaai-26/) |
+| **ICLR 2026** | 14th International Conference on Learning Representations | Rio de Janeiro, Brazil | April 23–27, 2026 | [iclr.cc](https://iclr.cc/Conferences/2026) |
+| **CVPR 2026** | IEEE/CVF Conference on Computer Vision and Pattern Recognition | Denver, Colorado, USA | June 3–7, 2026 | [cvpr.thecvf.com](https://cvpr.thecvf.com/Conferences/2026) |
+| **ICML 2026** | 43rd International Conference on Machine Learning | Seoul, South Korea | July 6–11, 2026 | [icml.cc](https://icml.cc/Conferences/2026) |
+| **KDD 2026** | 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining | Jeju, South Korea | August 9–13, 2026 | [kdd2026.kdd.org](https://kdd2026.kdd.org/) |
+| **IJCAI-ECAI 2026** | 35th International Joint Conference on Artificial Intelligence | Bremen, Germany | August 15–21, 2026 | [ijcai.org](https://www.ijcai.org/future_conferences) |
+| **ECCV 2026** | 18th European Conference on Computer Vision | Malmö, Sweden | September 8–13, 2026 | [eccv2026.eu](https://eccv2026.eu/) |
+| **NeurIPS 2026** | 40th Conference on Neural Information Processing Systems | TBA | December 2–7, 2026 | [neurips.cc](https://neurips.cc/) |
+
+> **Note:** Conference dates and locations are subject to change. Please check official websites for the most up-to-date information.
 
 ---
 
