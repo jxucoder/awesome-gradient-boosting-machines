@@ -1,0 +1,43 @@
+name: 🔗 Report Broken Link
+description: Report a broken or outdated link
+title: "[Broken Link] "
+labels: ["bug", "broken-link"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Found a broken link? Please let us know!
+
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      description: Which section of the README contains the broken link?
+      placeholder: "Research Papers > 2023"
+    validations:
+      required: true
+
+  - type: input
+    id: resource_name
+    attributes:
+      label: Resource Name
+      description: Name of the resource with the broken link
+      placeholder: "XGBoost Paper"
+    validations:
+      required: true
+
+  - type: input
+    id: broken_link
+    attributes:
+      label: Broken Link
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: input
+    id: new_link
+    attributes:
+      label: Suggested New Link (optional)
+      description: If you found a working alternative link
+      placeholder: "https://..."
+

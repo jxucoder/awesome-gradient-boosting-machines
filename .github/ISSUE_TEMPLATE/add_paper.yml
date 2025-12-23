@@ -1,0 +1,72 @@
+name: 📄 Add Research Paper
+description: Suggest a research paper to add to the list
+title: "[Paper] "
+labels: ["paper", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a paper! Please fill out the information below.
+
+  - type: input
+    id: title
+    attributes:
+      label: Paper Title
+      placeholder: "XGBoost: A Scalable Tree Boosting System"
+    validations:
+      required: true
+
+  - type: input
+    id: authors
+    attributes:
+      label: Authors
+      placeholder: "Chen, T., & Guestrin, C."
+    validations:
+      required: true
+
+  - type: input
+    id: venue
+    attributes:
+      label: Conference/Journal & Year
+      placeholder: "KDD 2016"
+    validations:
+      required: true
+
+  - type: input
+    id: paper_link
+    attributes:
+      label: Paper Link
+      description: Link to the paper (arXiv, ACM, etc.)
+      placeholder: "https://arxiv.org/abs/..."
+    validations:
+      required: true
+
+  - type: input
+    id: code_link
+    attributes:
+      label: Code Link (optional)
+      description: Link to the implementation if available
+      placeholder: "https://github.com/..."
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - "2024"
+        - "2023"
+        - "2022"
+        - "2021"
+        - "2020"
+        - "2019"
+        - "Foundational Papers"
+        - "Other (specify in description)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Why should this paper be added?
+      placeholder: Brief description of why this paper is relevant to gradient boosting...
+

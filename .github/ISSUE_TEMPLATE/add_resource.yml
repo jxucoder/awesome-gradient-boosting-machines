@@ -1,0 +1,56 @@
+name: 📚 Add Resource
+description: Suggest a tutorial, blog post, video, or tool
+title: "[Resource] "
+labels: ["resource", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a resource! Please fill out the information below.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Resource Type
+      options:
+        - Implementation/Tool
+        - Tutorial/Guide
+        - Blog Post
+        - Video/Talk
+        - Book
+        - Dataset
+        - Benchmark
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Resource Name/Title
+      placeholder: "Complete Guide to XGBoost Parameter Tuning"
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Author/Source
+      placeholder: "Analytics Vidhya"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: Brief description of the resource and why it should be added...
+    validations:
+      required: true
+
