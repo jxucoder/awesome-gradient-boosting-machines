@@ -173,7 +173,16 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
   - [[Paper](https://arxiv.org/abs/2312.10372)]
   - *Graph-based feature organization to enhance tree-based models.*
 
+- **MSBoost: Using Model Selection with Multiple Base Estimators for Gradient Boosting** (Preprint 2024)
+  - [[Paper](https://openreview.net/forum?id=kOPkwjk4WH)]
+  - *Heterogeneous base learners: trains multiple model types in parallel per boosting round, selects best. Strong on small/noisy datasets.*
+
 ### 2023
+
+- **Orthogonal Gradient Boosting for Interpretable Additive Rule Ensembles** (NeurIPS 2023)
+  - Yang, F., Le Bodic, P., Kamp, M., & Boley, M.
+  - [[Paper](https://openreview.net/pdf?id=j2EaW49Rk7)]
+  - *Orthogonal boosting for rule ensembles; produces interpretable additive models while maintaining predictive performance.*
 
 - **TabPFN: A Transformer That Solves Small Tabular Classification Problems in a Second** (ICLR 2023)
   - Hollmann, N., Müller, S., Eggensperger, K., & Hutter, F.
@@ -208,6 +217,11 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
   - Wang, K., Lu, J., Liu, A., Song, Y., Xiong, L., & Zhang, G.
   - [[Paper](https://ieeexplore.ieee.org/document/9678046)]
   - *Elastic GBDT that adapts to concept drift by adjusting iterations; robust in dynamic/streaming environments.*
+
+- **Quantized Training of Gradient Boosting Decision Trees** (NeurIPS 2022)
+  - Shi, Y., Ke, G., Chen, Z., Zheng, S., & Liu, T. Y.
+  - [[Paper](https://openreview.net/forum?id=Cd-b50MZ0Gc)]
+  - *Low-precision (2-3 bit) gradient quantization for GBDT; up to 2x speedup. Now in LightGBM.*
 
 - **Why do tree-based models still outperform deep learning on tabular data?** (NeurIPS 2022)
   - Grinsztajn, L., Oyallon, E., & Varoquaux, G.
@@ -274,6 +288,21 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
   - Rapp, M., Loza Mencía, E., Fürnkranz, J., Nguyen, V. L., & Hüllermeier, E.
   - [[Paper](https://arxiv.org/abs/2006.13346)] [[Code](https://github.com/mrapp-ke/MLRL-Boomer)]
   - *BOOMER: interpretable gradient boosted rules for multi-label classification; balances accuracy and interpretability.*
+
+- **Gradient Boosting Machine with Partially Randomized Decision Trees** (CoRR 2020)
+  - Konstantinov, A. V., & Utkin, L. V.
+  - [[Paper](https://openreview.net/forum?id=4fdSRf0SBL)]
+  - *Uses partially randomized trees (à la extremely randomized trees) in gradient boosting; reduces discontinuity issues and computational complexity.*
+
+- **Soft Gradient Boosting Machine** (CoRR 2020)
+  - Feng, J., Xu, Y. X., Jiang, Y., & Zhou, Z. H.
+  - [[Paper](https://openreview.net/forum?id=CS5LRC1RJZT)]
+  - *Differentiable soft decision trees with joint optimization; enables parallel training and online/incremental learning for GBMs.*
+
+- **StructureBoost: Efficient Gradient Boosting for Structured Categorical Variables** (CoRR 2020)
+  - Lucena, B.
+  - [[Paper](https://openreview.net/forum?id=jyNnxv8CyW)]
+  - *Handles categorical variables with known hierarchical/graph structure; outperforms CatBoost/LightGBM on structured categoricals and generalizes to unseen categories.*
 
 - **Gradient Boosted Decision Trees for High Dimensional Sparse Output** (ICML 2020)
   - Si, S., Zhang, H., Keerthi, S. S., Mahajan, D., Dhillon, I. S., & Hsieh, C. J.
