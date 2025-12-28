@@ -71,6 +71,9 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 
 - [NGBoost](https://github.com/stanfordmlgroup/ngboost) - Natural gradient boosting for probabilistic prediction by Stanford ML Group.
 - [XGBoost-Distribution](https://github.com/CDonnerer/xgboost-distribution) - Probabilistic prediction with XGBoost via MLE. Like NGBoost but ~15x faster, with full XGBoost features (monotonic constraints, GPU). ⭐ 120+
+- [XGBoostLSS](https://github.com/StatMixedML/XGBoostLSS) - Distributional gradient boosting extending XGBoost to model all parameters of 100+ distributions (location, scale, shape). Supports normalizing flows, mixture densities, and zero-inflated distributions. [[Paper](https://arxiv.org/abs/2304.03271)]
+- [LightGBMLSS](https://github.com/StatMixedML/LightGBMLSS) - Distributional gradient boosting extending LightGBM. Model full conditional distributions with 50+ univariate distributions, normalizing flows, and mixture densities.
+- [gamboostLSS](https://github.com/boost-R/gamboostLSS) - R package for boosting GAMLSS (Generalized Additive Models for Location, Scale, Shape). High-dimensional distributional regression with gradient boosting. [[JSS Paper](https://www.jstatsoft.org/article/view/v074i01)] ⭐ 70+
 - [PGBM](https://github.com/elephaint/pgbm) - Probabilistic Gradient Boosting Machines with native GPU acceleration, auto-differentiation, and uncertainty estimates. Built on PyTorch/Numba.
 - [GBNet](https://github.com/mthorrell/gbnet) - Integrates XGBoost/LightGBM with PyTorch for auto-differentiation of custom loss functions and hybrid neural network + GBM models. [[JOSS Paper](https://joss.theoj.org/papers/10.21105/joss.08047)]
 - [Perpetual](https://github.com/perpetual-ml/perpetual) - Hyperparameter-free gradient boosting that self-generalizes. Just set a `budget` parameter instead of tuning hyperparameters. Written in Rust with Python bindings.
