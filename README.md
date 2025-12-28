@@ -163,6 +163,11 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 
 ### 2024
 
+- **Optimal Parallelization of Boosting** (arXiv 2024)
+  - da Cunha, A., Høgsgaard, M. M., & Larsen, K. G.
+  - [[Paper](https://arxiv.org/abs/2408.16653)]
+  - *Establishes tight lower bounds on the parallel complexity of boosting; presents algorithm matching bounds across the full rounds vs. work spectrum.*
+
 - **TabR: Tabular Deep Learning Meets Nearest Neighbors** (ICLR 2024)
   - Gorishniy, Y., Rubachev, I., Kartashev, N., Shlenskii, D., Kotelnikov, A., & Babenko, A.
   - [[Paper](https://arxiv.org/abs/2307.14338)] [[Code](https://github.com/yandex-research/tabular-dl-tabr)]
