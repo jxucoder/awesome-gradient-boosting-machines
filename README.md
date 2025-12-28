@@ -75,6 +75,7 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 - [LightGBMLSS](https://github.com/StatMixedML/LightGBMLSS) - Distributional gradient boosting extending LightGBM. Model full conditional distributions with 50+ univariate distributions, normalizing flows, and mixture densities.
 - [gamboostLSS](https://github.com/boost-R/gamboostLSS) - R package for boosting GAMLSS (Generalized Additive Models for Location, Scale, Shape). High-dimensional distributional regression with gradient boosting. [[JSS Paper](https://www.jstatsoft.org/article/view/v074i01)] ⭐ 70+
 - [PGBM](https://github.com/elephaint/pgbm) - Probabilistic Gradient Boosting Machines with native GPU acceleration, auto-differentiation, and uncertainty estimates. Built on PyTorch/Numba.
+- [GPBoost](https://github.com/fabsig/GPBoost) - Combines gradient boosting with Gaussian process and mixed effects models for spatial/grouped data. Handles random effects and spatial correlations. [[JMLR Paper](https://jmlr.org/papers/v23/20-322.html)] ⭐ 600+
 - [GBNet](https://github.com/mthorrell/gbnet) - Integrates XGBoost/LightGBM with PyTorch for auto-differentiation of custom loss functions and hybrid neural network + GBM models. [[JOSS Paper](https://joss.theoj.org/papers/10.21105/joss.08047)]
 - [Perpetual](https://github.com/perpetual-ml/perpetual) - Hyperparameter-free gradient boosting that self-generalizes. Just set a `budget` parameter instead of tuning hyperparameters. Written in Rust with Python bindings.
 - [GBDT-PL](https://github.com/GBDT-PL/GBDT-PL) - Gradient Boosting with Piece-Wise Linear Regression Trees. Accelerates convergence and optimized for SIMD parallelism. (Now available in LightGBM via `linear_tree=true`)
@@ -165,6 +166,7 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 - **TabR: Tabular Deep Learning Meets Nearest Neighbors** (ICLR 2024)
   - Gorishniy, Y., Rubachev, I., Kartashev, N., Shlenskii, D., Kotelnikov, A., & Babenko, A.
   - [[Paper](https://arxiv.org/abs/2307.14338)] [[Code](https://github.com/yandex-research/tabular-dl-tabr)]
+  - *Retrieval-augmented deep learning for tabular data; competitive with tuned GBMs.*
 
 - **Language Models are Realistic Tabular Data Generators** (ICLR 2024)
   - Borisov, V., Seßler, K., Leemann, T., Heyer, M., & Kasneci, G.
@@ -190,14 +192,17 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 - **TabPFN: A Transformer That Solves Small Tabular Classification Problems in a Second** (ICLR 2023)
   - Hollmann, N., Müller, S., Eggensperger, K., & Hutter, F.
   - [[Paper](https://arxiv.org/abs/2207.01848)] [[Code](https://github.com/automl/TabPFN)]
+  - *Prior-data fitted network for small tabular tasks; no training needed, competitive with tuned GBMs.*
 
 - **TabDDPM: Modelling Tabular Data with Diffusion Models** (ICML 2023)
   - Kotelnikov, A., Barber, D., & Babenko, A.
   - [[Paper](https://arxiv.org/abs/2209.15421)] [[Code](https://github.com/rotot0/tab-ddpm)]
+  - *Diffusion models for tabular data generation; state-of-the-art synthetic data quality.*
 
 - **XTab: Cross-table Pretraining for Tabular Transformers** (ICML 2023)
   - Zhu, B., Shi, X., Erickson, N., Li, M., Karypis, G., & Shoaran, M.
   - [[Paper](https://arxiv.org/abs/2305.06090)] [[Code](https://github.com/BingzhaoZhu/XTab)]
+  - *Federated pretraining across multiple tables; transferable representations for tabular data.*
 
 ### 2022
 
@@ -229,18 +234,22 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 - **Why do tree-based models still outperform deep learning on tabular data?** (NeurIPS 2022)
   - Grinsztajn, L., Oyallon, E., & Varoquaux, G.
   - [[Paper](https://arxiv.org/abs/2207.08815)] [[Code](https://github.com/LeoGrin/tabular-benchmark)]
+  - *Landmark benchmark: GBDTs beat DNNs on medium-sized tabular data due to irregular patterns and uninformative features.*
 
 - **Gradient Boosted Decision Tree Neural Network** (ICLR 2022)
   - Chen, S., Guestrin, C.
   - [[Paper](https://arxiv.org/abs/2107.05882)]
+  - *Hybrid architecture combining GBDT structure with neural network training.*
 
-- **NODE: Neural Oblivious Decision Ensembles for Deep Learning on Tabular Data** (ICLR 2022)
+- **NODE: Neural Oblivious Decision Ensembles for Deep Learning on Tabular Data** (ICLR 2020)
   - Popov, S., Morozov, S., & Babenko, A.
   - [[Paper](https://arxiv.org/abs/1909.06312)] [[Code](https://github.com/Qwicen/node)]
+  - *Differentiable oblivious decision trees (like CatBoost) trained end-to-end; competitive with GBMs.*
 
-- **SAINT: Improved Neural Networks for Tabular Data via Row Attention and Contrastive Pre-Training** (AAAI 2022)
+- **SAINT: Improved Neural Networks for Tabular Data via Row Attention and Contrastive Pre-Training** (NeurIPS 2022)
   - Somepalli, G., Goldblum, M., Schwarzschild, A., Bruss, C. B., & Goldstein, T.
   - [[Paper](https://arxiv.org/abs/2106.01342)] [[Code](https://github.com/somepago/saint)]
+  - *Self-attention over both rows and columns; contrastive pre-training for tabular data.*
 
 ### 2021
 
@@ -253,13 +262,10 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
   - Sprangers, O., Schelter, S., & de Rijke, M.
   - [[Paper](https://arxiv.org/abs/2106.01682)] [[Code](https://github.com/elephaint/pgbm)]
 
-- **XGBoost: A Scalable Tree Boosting System Updates** (SIGKDD 2021)
-  - Chen, T., & Guestrin, C.
-  - [[Paper](https://arxiv.org/abs/1603.02754)] [[Code](https://github.com/dmlc/xgboost)]
-
 - **TabNet: Attentive Interpretable Tabular Learning** (AAAI 2021)
   - Arik, S. Ö., & Pfister, T.
   - [[Paper](https://arxiv.org/abs/1908.07442)] [[Code](https://github.com/dreamquark-ai/tabnet)]
+  - *Sparse attention for feature selection; interpretable DNN competitive with GBMs on some tasks.*
 
 - **Revisiting Deep Learning Models for Tabular Data** (NeurIPS 2021)
   - Gorishniy, Y., Rubachev, I., Khrulkov, V., & Babenko, A.
@@ -269,6 +275,7 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 - **Regularization is All You Need: Simple Neural Nets Can Excel on Tabular Data** (NeurIPS 2021)
   - Kadra, A., Lindauer, M., Hutter, F., & Grabocka, J.
   - [[Paper](https://arxiv.org/abs/2106.11189)]
+  - *Cocktail of regularization techniques makes simple MLPs competitive with GBMs.*
 
 - **DP-XGBoost: Private Machine Learning at Scale** (arXiv 2021)
   - Grammenos, A., Mendoza Smith, R., Crowcroft, J., & Mascolo, C.
@@ -281,6 +288,21 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
   - *Efficient and interpretable inference for tree ensembles in vertical federated learning scenarios.*
 
 ### 2020
+
+- **From Local Explanations to Global Understanding with Explainable AI for Trees** (Nature Machine Intelligence 2020)
+  - Lundberg, S. M., et al.
+  - [[Paper](https://www.nature.com/articles/s42256-019-0138-9)] [[Code](https://github.com/shap/shap)]
+  - *TreeSHAP: polynomial-time exact SHAP for trees. Global feature importance, dependence plots, and interaction detection.*
+
+- **Survival Regression with Accelerated Failure Time Model in XGBoost** (JCGS 2022, arXiv 2020)
+  - Barnwal, A., Cho, H., & Hocking, T.
+  - [[Paper](https://arxiv.org/abs/2006.04920)] [[Code](https://xgboost.readthedocs.io/en/stable/tutorials/aft_survival_analysis.html)]
+  - *First GPU-accelerated AFT model; supports right/left/interval censoring for survival analysis. Now in XGBoost.*
+
+- **NGBoost: Natural Gradient Boosting for Probabilistic Prediction** (ICML 2020)
+  - Duan, T., Avati, A., Ding, D. Y., Basu, S., Ng, A. Y., & Schuler, A.
+  - [[Paper](https://arxiv.org/abs/1910.03225)] [[Code](https://github.com/stanfordmlgroup/ngboost)]
+  - *Natural gradient for probabilistic prediction; outputs full distributions, not just point estimates.*
 
 - **Privacy-Preserving Gradient Boosting Decision Trees** (AAAI 2020)
   - Li, Q., Wu, Z., Wen, Z., & He, B.
@@ -325,19 +347,17 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 - **Gradient Boosting with Piece-Wise Linear Regression Trees** (IJCAI 2019)
   - Shi, Y., Li, J., & Li, Z.
   - [[Paper](https://www.ijcai.org/Proceedings/2019/0476.pdf)] [[Code](https://github.com/GBDT-PL/GBDT-PL)]
+  - *Linear models in leaves instead of constants; faster convergence with fewer trees. Now in LightGBM.*
 
 - **AugBoost: Gradient Boosting Enhanced with Step-Wise Feature Augmentation** (IJCAI 2019)
   - Tannor, P., & Rokach, L.
   - [[Paper](https://www.ijcai.org/proceedings/2019/0493.pdf)] [[Code](https://github.com/ptannor/augboost)]
   - *Uses neural networks to create new features at each boosting iteration; augments feature space progressively during training.*
 
-- **CatBoost: Unbiased Boosting with Categorical Features** (NeurIPS 2019)
+- **CatBoost: Unbiased Boosting with Categorical Features** (NeurIPS 2018)
   - Prokhorenkova, L., Gusev, G., Vorobev, A., Dorogush, A. V., & Gulin, A.
   - [[Paper](https://arxiv.org/abs/1706.09516)] [[Code](https://github.com/catboost/catboost)]
-
-- **NGBoost: Natural Gradient Boosting for Probabilistic Prediction** (NeurIPS 2019)
-  - Duan, T., Avati, A., Ding, D. Y., Basu, S., Ng, A. Y., & Schuler, A.
-  - [[Paper](https://arxiv.org/abs/1910.03225)] [[Code](https://github.com/stanfordmlgroup/ngboost)]
+  - *Ordered boosting prevents target leakage; native categorical encoding without one-hot.*
 
 - **gbdt-rs: Fast and Trustworthy Gradient Boosting Decision Tree** (IEEE S&P 2019 Poster)
   - Li, T., Li, T., Ding, Y., Zhang, Y., Wei, T., & Han, X.
@@ -359,78 +379,96 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 - **Collective Entity Disambiguation with Structured Gradient Tree Boosting** (NAACL 2018)
   - Yang, Y., Irsoy, O., & Rahman, K. S.
   - [[Paper](https://arxiv.org/pdf/1802.10229.pdf)] [[Code](https://github.com/bloomberg/sgtb)]
-
-- **CatBoost: Unbiased Boosting with Categorical Features** (NeurIPS 2018)
-  - Prokhorenkova, L., Gusev, G., Vorobev, A., Dorogush, A. V., & Gulin, A.
-  - [[Paper](https://papers.nips.cc/paper/7898-catboost-unbiased-boosting-with-categorical-features.pdf)] [[Code](https://github.com/catboost/catboost)]
+  - *Structured prediction with GBDTs for entity linking; models entity interdependencies.*
 
 - **Multi-Layered Gradient Boosting Decision Trees** (NeurIPS 2018)
   - Feng, J., Yu, Y., & Zhou, Z. H.
   - [[Paper](https://papers.nips.cc/paper/7614-multi-layered-gradient-boosting-decision-trees.pdf)] [[Code](https://github.com/kingfengji/mGBDT)]
+  - *Multi-layer representation learning with GBDTs; deep forest alternative to deep neural nets.*
 
 - **Learning Deep ResNet Blocks Sequentially using Boosting Theory** (ICML 2018)
   - Huang, F., Ash, J. T., Langford, J., & Schapire, R. E.
   - [[Paper](https://arxiv.org/abs/1706.04964)] [[Code](https://github.com/JordanAsh/boostresnet)]
+  - *Boosting perspective on ResNets; proves ResNet blocks can be learned sequentially.*
 
 - **Functional Gradient Boosting based on Residual Network Perception** (ICML 2018)
   - Nitanda, A., & Suzuki, T.
   - [[Paper](https://arxiv.org/abs/1802.09031)] [[Code](https://github.com/anitan0925/ResFGB)]
+  - *Functional gradient descent with neural network base learners.*
 
 - **Finding Influential Training Samples for Gradient Boosted Decision Trees** (ICML 2018)
   - Sharchilev, B., Ustinovskiy, Y., Serdyukov, P., & de Rijke, M.
   - [[Paper](https://arxiv.org/abs/1802.06640)]
+  - *LeafInfluence/LeafRefit: efficiently compute influence of training samples on GBDT predictions.*
 
 - **Boosting Variational Inference: an Optimization Perspective** (AISTATS 2018)
   - Locatello, F., Khanna, R., Ghosh, J., & Rätsch, G.
   - [[Paper](https://arxiv.org/abs/1708.01733)] [[Code](https://github.com/ratschlab/boosting-bbvi)]
+  - *Applies boosting to variational inference; iteratively adds mixture components.*
 
 ### 2017
+
+- **A Unified Approach to Interpreting Model Predictions** (NeurIPS 2017)
+  - Lundberg, S. M., & Lee, S. I.
+  - [[Paper](https://arxiv.org/abs/1705.07874)] [[Code](https://github.com/shap/shap)]
+  - *Introduces SHAP values unifying LIME, DeepLIFT, and Shapley values. The gold standard for explaining GBM predictions. 30k+ citations.*
 
 - **LightGBM: A Highly Efficient Gradient Boosting Decision Tree** (NeurIPS 2017)
   - Ke, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., Ye, Q., & Liu, T.
   - [[Paper](https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision-tree)] [[Code](https://github.com/microsoft/LightGBM)]
+  - *GOSS (gradient-based one-side sampling) + EFB (exclusive feature bundling) for 20x speedup over XGBoost.*
 
 - **AdaGAN: Boosting Generative Models** (NeurIPS 2017)
   - Tolstikhin, I. O., Gelly, S., Bousquet, O., Simon-Gabriel, C. J., & Schölkopf, B.
   - [[Paper](https://arxiv.org/abs/1701.02386)] [[Code](https://github.com/tolstikhin/adagan)]
+  - *Boosting framework for GANs; iteratively trains generators to cover missing modes.*
 
 - **Gradient Boosted Decision Trees for High Dimensional Sparse Output** (ICML 2017)
   - Si, S., Zhang, H., Keerthi, S. S., Mahajan, D., Dhillon, I. S., & Hsieh, C. J.
   - [[Paper](http://proceedings.mlr.press/v70/si17a.html)] [[Code](https://github.com/springdaisy/GBDT)]
+  - *Efficient GBDT for extreme multi-label classification with millions of labels.*
 
 - **Variational Boosting: Iteratively Refining Posterior Approximations** (ICML 2017)
   - Miller, A. C., Foti, N. J., & Adams, R. P.
   - [[Paper](https://arxiv.org/abs/1611.06585)] [[Code](https://github.com/andymiller/vboost)]
+  - *Gradient boosting for Bayesian inference; refines variational approximations.*
 
 - **BDT: Gradient Boosted Decision Tables for High Accuracy and Scoring Efficiency** (KDD 2017)
   - Lou, Y., & Obukhov, M.
   - [[Paper](https://yinlou.github.io/papers/lou-kdd17.pdf)]
+  - *Decision tables as base learners; 10x faster scoring than trees with comparable accuracy.*
 
 - **Gradient Boosting on Stochastic Data Streams** (AISTATS 2017)
   - Hu, H., Sun, W., Venkatraman, A., Hebert, M., & Bagnell, J. A.
   - [[Paper](https://arxiv.org/abs/1703.00377)]
+  - *Online boosting for streaming data; adapts to non-stationary distributions.*
 
 ### 2016
 
 - **XGBoost: A Scalable Tree Boosting System** (KDD 2016)
   - Chen, T., & Guestrin, C.
   - [[Paper](https://arxiv.org/abs/1603.02754)] [[Code](https://github.com/dmlc/xgboost)]
+  - *The foundational XGBoost paper; sparsity-aware splits, weighted quantile sketch, cache-aware access. 50k+ citations.*
 
 - **Boosting with Abstention** (NeurIPS 2016)
   - Cortes, C., DeSalvo, G., & Mohri, M.
   - [[Paper](https://papers.nips.cc/paper/6336-boosting-with-abstention)]
+  - *Boosting with option to abstain from prediction; theoretical analysis of abstention costs.*
 
 - **Incremental Boosting Convolutional Neural Network for Facial Action Unit Recognition** (NeurIPS 2016)
   - Han, S., Meng, Z., Khan, A. S., & Tong, Y.
   - [[Paper](https://arxiv.org/abs/1707.05395)] [[Code](https://github.com/sjsingh91/IB-CNN)]
+  - *Boosted ensemble of CNNs for facial action unit detection.*
 
 - **Boosted Decision Tree Regression Adjustment for Variance Reduction** (KDD 2016)
   - Poyarkov, A., Drutsa, A., Khalyavin, A., Gusev, G., & Serdyukov, P.
   - [[Paper](https://www.kdd.org/kdd2016/papers/files/adf0653-poyarkovA.pdf)]
+  - *GBDT for variance reduction in A/B testing; improves statistical power of online experiments.*
 
 - **L-EnsNMF: Boosted Local Topic Discovery via Ensemble of NMF** (ICDM 2016)
   - Suh, S., Choo, J., Lee, J., & Reddy, C. K.
   - [[Paper](https://ieeexplore.ieee.org/document/7837872)] [[Code](https://github.com/benedekrozemberczki/BoostedFactorization)]
+  - *Boosting for matrix factorization; ensemble of NMF for topic modeling.*
 
 ### 2015
 
