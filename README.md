@@ -292,6 +292,11 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
   - [[Paper](https://arxiv.org/abs/2105.09540)]
   - *Efficient and interpretable inference for tree ensembles in vertical federated learning scenarios.*
 
+- **Net-DNF: Effective Deep Modeling of Tabular Data** (ICLR 2021)
+  - Katzir, L., Elidan, G., & El-Yaniv, R.
+  - [[Paper](https://openreview.net/forum?id=73WTGs96kho)]
+  - *Neural architecture with inductive bias for DNF-like Boolean formulas over soft-threshold decision terms; promotes localized decisions on feature subsets, outperforms fully connected networks on tabular data.*
+
 ### 2020
 
 - **From Local Explanations to Global Understanding with Explainable AI for Trees** (Nature Machine Intelligence 2020)
@@ -685,6 +690,7 @@ Top ML/AI conferences in 2026 where gradient boosting research is commonly prese
 |------------|-----------|----------|-------|---------|
 | **AAAI 2026** | 40th AAAI Conference on Artificial Intelligence | Singapore | January 20–27, 2026 | [aaai.org](https://aaai.org/conference/aaai/aaai-26/) |
 | **ICLR 2026** | 14th International Conference on Learning Representations | Rio de Janeiro, Brazil | April 23–27, 2026 | [iclr.cc](https://iclr.cc/Conferences/2026) |
+| **AISTATS 2026** | 29th International Conference on Artificial Intelligence and Statistics | Tangier, Morocco | May 2–5, 2026 | [aistats.org](https://virtual.aistats.org/Conferences/2026/Dates) |
 | **CVPR 2026** | IEEE/CVF Conference on Computer Vision and Pattern Recognition | Denver, Colorado, USA | June 3–7, 2026 | [cvpr.thecvf.com](https://cvpr.thecvf.com/Conferences/2026) |
 | **ICML 2026** | 43rd International Conference on Machine Learning | Seoul, South Korea | July 6–11, 2026 | [icml.cc](https://icml.cc/Conferences/2026) |
 | **KDD 2026** | 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining | Jeju, South Korea | August 9–13, 2026 | [kdd2026.kdd.org](https://kdd2026.kdd.org/) |
