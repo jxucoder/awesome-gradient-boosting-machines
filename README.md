@@ -277,6 +277,11 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
   - [[Paper](https://arxiv.org/abs/2106.11959)] [[Code](https://github.com/yandex-research/rtdl)]
   - *Introduces FT-Transformer; comprehensive benchmark comparing ResNet, MLP, Transformer architectures to GBMs on tabular data.*
 
+- **Tabular Data: Deep Learning is Not All You Need** (arXiv 2021)
+  - Shwartz-Ziv, R., & Armon, A.
+  - [[Paper](https://arxiv.org/abs/2106.03253)]
+  - *Benchmarks XGBoost against deep models on 11 datasets; XGBoost outperforms or matches DNNs, with much faster training and easier tuning.*
+
 - **Regularization is All You Need: Simple Neural Nets Can Excel on Tabular Data** (NeurIPS 2021)
   - Kadra, A., Lindauer, M., Hutter, F., & Grabocka, J.
   - [[Paper](https://arxiv.org/abs/2106.11189)]
