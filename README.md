@@ -38,6 +38,7 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 - [Benchmarks & Comparisons](#benchmarks--comparisons)
 - [Real-World Applications](#real-world-applications)
 - [Related Awesome Lists](#related-awesome-lists)
+- [Workshops](#workshops)
 - [2026 Conferences](#2026-conferences)
 - [Contributing](#contributing)
 
@@ -82,6 +83,8 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 - [SGTB](https://github.com/bloomberg/sgtb) - Structured Gradient Tree Boosting for collective entity disambiguation by Bloomberg.
 - [AugBoost](https://github.com/ptannor/augboost) - Gradient boosting with step-wise feature augmentation using neural networks. Creates new features during boosting iterations. [[IJCAI 2019 Paper](https://www.ijcai.org/proceedings/2019/0493.pdf)]
 - [ThunderGBM](https://github.com/Xtra-Computing/thundergbm) - GPU-accelerated gradient boosting decision tree library.
+- [GrowNet](https://github.com/sbadirli/GrowNet) - Gradient boosting with shallow neural networks as weak learners. Corrective step + dynamic learning rate. [[Paper](https://arxiv.org/abs/2002.07971)]
+- [GRANDE](https://github.com/s-marton/GRANDE) - End-to-end gradient-based training of decision tree ensembles; differentiable soft trees. [[Paper](https://openreview.net/forum?id=XEFWBxi075)]
 - [InterpretML / EBM](https://github.com/interpretml/interpret) - Microsoft's Explainable Boosting Machine - a glass-box model as accurate as black-box GBMs but fully interpretable. ⭐ 6k+
 - [FLAML](https://github.com/microsoft/FLAML) - Microsoft's Fast and Lightweight AutoML library with efficient GBM hyperparameter tuning. ⭐ 4k+
 - [AutoGluon-Tabular](https://github.com/autogluon/autogluon) - Amazon's AutoML that ensembles multiple GBMs (XGBoost, LightGBM, CatBoost) for state-of-the-art tabular performance. ⭐ 8k+
@@ -161,7 +164,66 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
   - [[Paper](https://arxiv.org/abs/2506.02390)]
   - *Two-stage framework using granular-ball data compression; robust under noisy conditions for multiclass classification.*
 
+- **Representation Learning for Tabular Data: A Comprehensive Survey** (arXiv 2025)
+  - Jiang, J. P., Liu, S. Y., Cai, H. R., Zhou, Q. L., & Ye, H. J.
+  - [[Paper](https://arxiv.org/abs/2504.16109)] [[Code](https://github.com/LAMDA-Tabular/Tabular-Survey)]
+  - *Comprehensive survey covering specialized, transferable, and foundation models for tabular data; compares DNNs vs GBDTs with taxonomy of representation learning strategies.*
+
+- **TabM: Advancing Tabular Deep Learning with Parameter-Efficient Ensembling** (ICLR 2025)
+  - [[Paper](https://arxiv.org/abs/2410.24210)] [[Code](https://github.com/yandex-research/tabm)]
+  - *Simple MLP-based architecture with parameter-efficient ensembling; competitive with GBDTs while being much simpler than other deep tabular methods.*
+
+- **TabPFN v2: Accurate Predictions on Small Data with a Tabular Foundation Model** (Nature 2025)
+  - [[Paper](https://www.nature.com/articles/s41586-024-08328-6)] [[Code](https://github.com/PriorLabs/TabPFN)]
+  - *Tabular foundation model achieving state-of-the-art on small datasets; extends TabPFN with improved scaling and ensembling.*
+
+- **TabArena: A Living Benchmark for Machine Learning on Tabular Data** (NeurIPS 2025)
+  - [[Paper](https://arxiv.org/abs/2506.16791)] [[Code](https://tabarena.ai)]
+  - *Living benchmark with continuous updates; tracks performance of GBDTs vs deep learning on tabular tasks.*
+
+- **TabReD: Analyzing Pitfalls and Filling the Gaps in Tabular Deep Learning Benchmarks** (ICLR 2025)
+  - [[Paper](https://arxiv.org/abs/2406.19380)] [[Code](https://github.com/yandex-research/tabred)]
+  - *Identifies critical pitfalls in tabular benchmarks; introduces new datasets with temporal train-test splits where GBDTs maintain advantages.*
+
+- **LLM-Boost & PFN-Boost: Transformers Boost the Performance of Decision Trees on Tabular Data** (arXiv 2025)
+  - [[Paper](https://arxiv.org/abs/2502.02672)] [[Code](https://github.com/MayukaJ/LLM-Boost)]
+  - *Hybrid ensembles combining TabPFN/LLMs with decision trees; transformers boost tree performance across sample sizes.*
+
+- **Beta: TabPFN Unleashed - A Scalable and Effective Solution to Tabular Classification** (arXiv 2025)
+  - [[Paper](https://arxiv.org/abs/2502.02527)]
+  - *Scales TabPFN to larger datasets; maintains competitive performance with GBDTs on bigger tabular problems.*
+
+- **GReaTER: Generate Realistic Tabular Data after Data Enhancement and Reduction** (ICDE 2025 Workshop)
+  - Kwok, T. S. T., Wang, C. H., & Cheng, G.
+  - [[Paper](https://arxiv.org/abs/2503.15564)]
+  - *Extends GReaT framework with semantic enhancement and cross-table connections for multi-table synthesis using LLMs.*
+
 ### 2024
+
+- **A Closer Look at Deep Learning Methods on Tabular Datasets** (arXiv 2024)
+  - Ye, H. J., Liu, S. Y., Cai, H. R., Zhou, Q. L., & Zhan, D. C.
+  - [[Paper](https://arxiv.org/abs/2407.00956)] [[Code](https://github.com/qile2000/LAMDA-TALENT)]
+  - *TALENT benchmark with 300+ datasets; shows GBDTs remain strong baselines while pretrained tabular models are closing the gap. Introduces TALENT-tiny (45 datasets) for rapid evaluation.*
+
+- **Better by Default: Strong Pre-Tuned MLPs and Boosted Trees on Tabular Data** (NeurIPS 2024)
+  - [[Paper](https://arxiv.org/abs/2407.04491)] [[Code](https://github.com/dholzmueller/pytabkit)]
+  - *Proposes well-tuned default hyperparameters for GBDTs and MLPs; shows proper tuning closes gap between methods.*
+
+- **GRANDE: Gradient-Based Decision Tree Ensembles for Tabular Data** (ICLR 2024)
+  - [[Paper](https://openreview.net/forum?id=XEFWBxi075)] [[Code](https://github.com/s-marton/GRANDE)]
+  - *End-to-end gradient-based training of decision tree ensembles; combines differentiability of neural nets with interpretability of trees.*
+
+- **HyperFast: Instant Classification for Tabular Data** (AAAI 2024)
+  - [[Paper](https://ojs.aaai.org/index.php/AAAI/article/view/28988)] [[Code](https://github.com/AI-sandbox/HyperFast)]
+  - *Meta-learned hypernetwork for instant tabular classification; no training needed on new datasets.*
+
+- **A Data-Centric Perspective on Evaluating Machine Learning Models for Tabular Data** (NeurIPS 2024)
+  - [[Paper](https://arxiv.org/abs/2407.02112)] [[Code](https://github.com/atschalz/dc_tabeval)]
+  - *Data-centric benchmark examining how dataset properties affect GBDT vs DNN performance; provides guidelines for model selection.*
+
+- **GTL: From Supervised to Generative - A Novel Paradigm for Tabular Deep Learning with LLMs** (KDD 2024)
+  - [[Paper](https://dl.acm.org/doi/abs/10.1145/3637528.3671975)] [[Code](https://github.com/microsoft/Industrial-Foundation-Models)]
+  - *Microsoft's generative approach to tabular learning; LLM-based predictions competitive with GBDTs.*
 
 - **Optimal Parallelization of Boosting** (arXiv 2024)
   - da Cunha, A., Høgsgaard, M. M., & Larsen, K. G.
@@ -189,10 +251,25 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 
 ### 2023
 
+- **When Do Neural Nets Outperform Boosted Trees on Tabular Data?** (NeurIPS 2023)
+  - McElfresh, D., et al.
+  - [[Paper](https://arxiv.org/abs/2305.02997)] [[Code](https://github.com/naszilla/tabzilla)]
+  - *TabZilla meta-learning analysis on 36 datasets; identifies when neural nets beat GBDTs based on dataset characteristics.*
+
 - **Orthogonal Gradient Boosting for Interpretable Additive Rule Ensembles** (NeurIPS 2023)
   - Yang, F., Le Bodic, P., Kamp, M., & Boley, M.
   - [[Paper](https://openreview.net/pdf?id=j2EaW49Rk7)]
   - *Orthogonal boosting for rule ensembles; produces interpretable additive models while maintaining predictive performance.*
+
+- **TableShift: A Benchmark for Distribution Shift in Tabular Data** (NeurIPS 2023)
+  - Gardner, J., et al.
+  - [[Paper](https://arxiv.org/abs/2312.07577)] [[Code](https://github.com/mlfoundations/tableshift)]
+  - *Benchmark for evaluating robustness to distribution shift; tests GBDTs vs deep learning under domain shift.*
+
+- **A Benchmark of Categorical Encoders for Binary Classification** (NeurIPS 2023)
+  - Cerda, P., & Varoquaux, G.
+  - [[Paper](https://arxiv.org/abs/2307.09191)] [[Code](https://github.com/DrCohomology/EncoderBenchmarking)]
+  - *Comprehensive benchmark of categorical encoders; guidance for feature engineering with GBDTs.*
 
 - **TabPFN: A Transformer That Solves Small Tabular Classification Problems in a Second** (ICLR 2023)
   - Hollmann, N., Müller, S., Eggensperger, K., & Hutter, F.
@@ -318,6 +395,16 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
   - Duan, T., Avati, A., Ding, D. Y., Basu, S., Ng, A. Y., & Schuler, A.
   - [[Paper](https://arxiv.org/abs/1910.03225)] [[Code](https://github.com/stanfordmlgroup/ngboost)]
   - *Natural gradient for probabilistic prediction; outputs full distributions, not just point estimates.*
+
+- **GrowNet: Gradient Boosting Neural Networks** (arXiv 2020)
+  - Badirli, S., Liu, X., Xing, Z., Bhowmik, A., Doan, K., & Keerthi, S. S.
+  - [[Paper](https://arxiv.org/abs/2002.07971)] [[Code](https://github.com/sbadirli/GrowNet)]
+  - *Gradient boosting with shallow neural networks as weak learners; combines boosting with representation learning.*
+
+- **TabTransformer: Tabular Data Modeling Using Contextual Embeddings** (arXiv 2020)
+  - Huang, X., Khetan, A., Cvitkovic, M., & Karnin, Z.
+  - [[Paper](https://arxiv.org/abs/2012.06678)] [[Code](https://github.com/lucidrains/tab-transformer-pytorch)]
+  - *Transformer for categorical features with contextual embeddings; foundational work comparing transformers to GBDTs on tabular data.*
 
 - **Privacy-Preserving Gradient Boosting Decision Trees** (AAAI 2020)
   - Li, Q., Wu, Z., Wen, Z., & He, B.
@@ -635,6 +722,13 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 ### Benchmark Repositories
 
 - [Tabular Benchmark](https://github.com/LeoGrin/tabular-benchmark) - Comprehensive benchmark comparing deep learning and gradient boosting
+- [TabArena](https://tabarena.ai) - Living benchmark with continuous updates for tabular ML methods
+- [LAMDA-TALENT](https://github.com/qile2000/LAMDA-TALENT) - 300+ tabular datasets benchmark with TALENT-tiny for rapid evaluation
+- [TabZilla](https://github.com/naszilla/tabzilla) - Meta-learning analysis comparing neural nets vs boosted trees
+- [TabReD](https://github.com/yandex-research/tabred) - Benchmark addressing pitfalls in tabular deep learning evaluation
+- [TableShift](https://github.com/mlfoundations/tableshift) - Distribution shift benchmark for tabular data
+- [EncoderBenchmarking](https://github.com/DrCohomology/EncoderBenchmarking) - Benchmark of categorical encoders for feature engineering
+- [pytabkit](https://github.com/dholzmueller/pytabkit) - Pre-tuned defaults for GBDTs and MLPs with benchmarking tools
 - [OpenML Benchmarking Suites](https://www.openml.org/s/218) - Standardized machine learning benchmarks
 - [MLPerf Training](https://mlcommons.org/en/training-normal-11/) - Industry-standard ML benchmarks
 
@@ -642,6 +736,8 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 
 - [Deep Neural Networks vs Gradient Boosted Trees](https://arxiv.org/abs/2207.08815) - Empirical comparison study
 - [AutoML Benchmark](https://arxiv.org/abs/2207.12560) - Comparing automated ML systems
+- [When Do Neural Nets Outperform Boosted Trees?](https://arxiv.org/abs/2305.02997) - TabZilla meta-learning analysis
+- [Data-Centric Tabular Evaluation](https://arxiv.org/abs/2407.02112) - How dataset properties affect model selection
 
 ---
 
@@ -681,9 +777,24 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 
 - [Awesome Gradient Boosting Papers](https://github.com/benedekrozemberczki/awesome-gradient-boosting-papers) - Academic papers on gradient boosting
 - [Awesome Gradient Boosting](https://github.com/talperetz/awesome-gradient-boosting) - Resources for data scientists
+- [Awesome Tabular Deep Learning](https://github.com/LAMDA-Tabular/Tabular-Survey) - Comprehensive survey on tabular representation learning (specialized, transferable, and foundation models)
+- [Awesome Tabular LLMs](https://github.com/SpursGoZmy/Awesome-Tabular-LLMs) - Large language models for tabular data understanding and reasoning
 - [Awesome Decision Tree Research](https://github.com/benedekrozemberczki/awesome-decision-tree-papers) - Decision tree papers
 - [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning) - General ML resources
 - [Awesome AutoML](https://github.com/hibayesian/awesome-automl-papers) - AutoML papers and resources
+
+---
+
+## Workshops
+
+Specialized workshops on tabular data and tree-based methods:
+
+- [AI for Tabular Data @ EurIPS 2025](https://sites.google.com/view/eurips25-ai-td/home) - Representation learning, generative AI, and foundation models for tables (Dec 6, 2025, Copenhagen)
+- [Table Representation Learning Workshop @ NeurIPS 2024](https://table-representation-learning.github.io/) - Latest advances in tabular ML
+- [Table Representation Learning Workshop @ NeurIPS 2023](https://neurips.cc/virtual/2023/workshop/66546)
+- [Table Representation Learning Workshop @ NeurIPS 2022](https://neurips.cc/virtual/2022/workshop/49995)
+- [Table Representation Learning Workshop @ ACL 2025](https://table-representation-learning.github.io/ACL2025/) - 4th TRL workshop (July 31, 2025, Vienna, Austria)
+- [Foundation Models for Structured Data @ ICML 2025](https://icml-structured-fm-workshop.github.io/) - TabPFN, TabICL, TabForestPFN for tabular; Chronos, TimesFM for time series (July 18, 2025, Vancouver)
 
 ---
 
