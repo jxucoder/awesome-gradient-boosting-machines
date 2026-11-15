@@ -606,8 +606,8 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 ### 2019
 
 - **Regularized Gradient Boosting** (NeurIPS 2019)
-  - Cortes, C., & Mohri, M.
-  - [[Paper](https://proceedings.neurips.cc/paper_files/paper/2019/file/4f00921f1e0d6d93f9f06c7b8c4a6a7e-Paper.pdf)]
+  - Cortes, C., Mohri, M., & Storcheus, D.
+  - [[Paper](https://cs.nyu.edu/~mohri/pub/rgb.pdf)]
   - *RGB algorithm: applies Structural Risk Minimization at each boosting round to balance empirical fit and model complexity; provides data-dependent generalization guarantees via Rademacher complexity.*
 
 - **Gradient Boosting with Piece-Wise Linear Regression Trees** (IJCAI 2019)
@@ -758,7 +758,7 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 
 - **Optimal Action Extraction for Random Forests and Boosted Trees** (KDD 2015)
   - Cui, Z., Chen, W., He, Y., & Chen, Y.
-  - [[Paper](https://www.cse.wustl.edu/~ychen/public/OAE.pdf)]
+  - [[Paper](https://dl.acm.org/doi/10.1145/2783258.2783281)]
 
 - **A Boosting Algorithm for Item Recommendation with Implicit Feedback** (IJCAI 2015)
   - Liu, Y., Zhao, P., Sun, A., & Miao, C.
@@ -828,7 +828,6 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 ### Comparisons & Benchmarks
 
 - [XGBoost vs LightGBM vs CatBoost](https://towardsdatascience.com/catboost-vs-light-gbm-vs-xgboost-5f93620723db) - Comprehensive Comparison
-- [When to Use Different Gradient Boosting Libraries](https://neptune.ai/blog/when-to-choose-catboost-over-xgboost-or-lightgbm) - Neptune.ai Blog
 - [Gradient Boosting vs Random Forest](https://towardsdatascience.com/gradient-boosting-vs-random-forest-cfa3fa8f0d80) - Comparative Analysis
 
 ### Deep Dives
@@ -851,7 +850,6 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 ### Conference Talks
 
 - [XGBoost: A Scalable Tree Boosting System](https://www.youtube.com/watch?v=Vly8xGnNiWs) - Tianqi Chen, KDD 2016
-- [LightGBM: A Highly Efficient Gradient Boosting Decision Tree](https://www.youtube.com/watch?v=wPr4PkM-ks8) - Microsoft Research
 - [CatBoost - the new generation of gradient boosting](https://www.youtube.com/watch?v=8o0e-r0B5xQ) - Yandex
 
 ### Educational Videos
@@ -865,7 +863,6 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 
 - [XGBoost Python Tutorial](https://www.youtube.com/watch?v=GrJP9FLV3FE) - Hands-on Implementation
 - [LightGBM Complete Guide](https://www.youtube.com/watch?v=n_ZMQj09S6w) - Complete Tutorial
-- [CatBoost Tutorial for Beginners](https://www.youtube.com/watch?v=MfKJlCyKdak) - Getting Started
 
 ---
 
