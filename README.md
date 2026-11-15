@@ -109,7 +109,7 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
 - [H2O GBM](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/gbm.html) - H2O's gradient boosting machine implementation.
 - [TensorFlow Decision Forests](https://www.tensorflow.org/decision_forests) - Decision forest algorithms including gradient boosted trees in TensorFlow.
 - [RAPIDS cuML](https://github.com/NVIDIA/cuml) - GPU machine learning library including XGBoost/gradient boosting support.
-- [SnapML](https://www.zurich.ibm.com/snapml/) - IBM's library for training generalized linear models and gradient boosting machines.
+- [SnapML](https://research.ibm.com/projects/snap-machine-learning) - IBM's library for training generalized linear models and gradient boosting machines (archived).
 - [PyGBM](https://github.com/ogrisel/pygbm) - Experimental gradient boosting machines in Python (archived).
 
 ---
@@ -193,15 +193,50 @@ From Kaggle competitions to production ML systems, gradient boosting machines do
   - [[Paper](https://arxiv.org/abs/2608.03111)]
   - *Identifies the split-candidate budget as an operational capacity axis for GBDTs; demonstrates and explains test-error double descent across XGBoost, LightGBM, and CatBoost via an empirical tree-kernel diagnostic.*
 
+- **Convolution Smoothed Quantile Regression for XGBoost** (arXiv 2026)
+  - Yao, M., & Franklin, M.
+  - [[Paper](https://arxiv.org/abs/2608.15290)]
+  - *Adds a convolution-smoothed quantile loss to XGBoost so split finding keeps a Hessian while estimating conditional quantiles, CDFs, and exceedances.*
+
+- **Leaf Values as Coordinates: Exact Contrastive Explanation for Gradient-Boosted Ensembles** (arXiv 2026)
+  - Luzio, E.
+  - [[Paper](https://arxiv.org/abs/2608.19127)]
+  - *Treats each tree's leaf value as a coordinate so the gap between two predictions is an exact sparse contrast, and builds recourse on that representation.*
+
 - **qshap: Fast Shapley Decomposition of R² for Gradient-Boosted Trees** (arXiv 2026)
   - Jiang, Z., Zhang, M., & Zhang, D.
   - [[Paper](https://arxiv.org/abs/2608.24104)]
   - *Decomposes a GBDT's R² into per-feature Shapley contributions from the quadratic loss of each observation; implementations are provided for R and Python.*
 
+- **Sparse Oblique Rule Boosting for Simpler Additive Rule Ensembles** (arXiv 2026)
+  - Behzadimanesh, S., Le Bodic, P., Webb, G. I., & Boley, M.
+  - [[Paper](https://arxiv.org/abs/2609.06426)] [[Code](https://github.com/shahrzaddii/obliqueruleboosting)]
+  - *Gradient-boosts additive rules whose conditions are sparse linear inequalities, so decision regions can be oblique polyhedra rather than axis-aligned boxes.*
+
+- **NPBoost: Neural Processes with Gradient-Boosted Fixed Effects** (arXiv 2026)
+  - Nava, A., Rölli, K., Begic, A., & Sigrist, F.
+  - [[Paper](https://arxiv.org/abs/2609.28122)] [[Code](https://github.com/ken-r/npboost)]
+  - *Jointly boosts a tree ensemble of fixed effects shared across tasks with Neural Process random effects for tabular meta-learning.*
+
 - **CERBO: Certified Recourse at a Requested Rate for Gradient-Boosted Trees** (arXiv 2026)
   - Hossain, F. S., Fuad, T. R., Hasnat, M. Z. B., Jahin, M. A., & Parvez, M. R.
   - [[Paper](https://arxiv.org/abs/2611.03222)]
   - *Trains a GBDT toward a requested recourse rate and certifies a within-budget action for each training sample, extending the bounds used by RABIT.*
+
+- **CRAFT-GBM: Selecting Best Features for Gradient-Boosted Machine Learning** (arXiv 2026)
+  - Kuok, B., Zhou, Y., Xuan, Y., Li, S., & Huang, K. W.
+  - [[Paper](https://arxiv.org/abs/2611.11914)] [[Code](https://github.com/basilkuok/CRAFT-GBM)]
+  - *Native LightGBM extension that chooses which features to search each boosting round from confidence bounds on past split gains, instead of a fixed subsampling fraction.*
+
+- **Generalized Adaptive Boosting and the Geometry of Mistakes** (arXiv 2026)
+  - Bressan, M., Brukhim, N., Cesa-Bianchi, N., Esposito, E., Mansour, Y., Moran, S., et al.
+  - [[Paper](https://arxiv.org/abs/2611.12696)]
+  - *Characterizes which joint false-positive and false-negative weak-learning regions can be boosted, and gives an adaptive algorithm that does not need the region known in advance.*
+
+- **MammothDP: Private Boosted Decision Trees Ready for Trusted Hardware and Leakage-free Hyperparameters** (arXiv 2026)
+  - Kirschte, M., Peinemann, T., Kostiainen, K., Wichelmann, J., Eisenbarth, T., & Mohammadi, E.
+  - [[Paper](https://arxiv.org/abs/2611.14317)] [[Code](https://github.com/kirschte/MammothDP)]
+  - *Differentially private boosted trees for trusted execution environments, with timing-side-channel hardening, early stopping that spends no extra privacy budget, and rollback protection that stays safe under those timing attacks.*
 
 ### 2025
 
